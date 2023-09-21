@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="d-flex flex-col bg-color-blue-light">
+    <header class="header-top bg-color-white">
+        <nav class="nav-menu">
+            <a>CRM System</a>
+            <ul class="nav-menu__list">
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Activity</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg-color-blue-light w-100 mx-2">
+        <section class="section-dashboard d-flex grid-container">
+            <div class="contact">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <img src="assets/Frame 1.png">
+                        <div class="contact-info__user">
+                            <h3>Rara Kartatika</h3>
+                            <span>PT Test 10 Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="contact-action">
+                        <a class="button-primary w-100">Check In</a>
+                        <a class="button-primary w-100">Call</a>
+                        <a class="button-primary w-100">Email</a>
+                    </div>
+                </div>
+                <div class="profile-contact-box">
+                    <h3>Profile Contact</h3>
+                    <div class="profile-contact-box__information">
+                        <div class="profile-contact__list">
+                            <h4>Number Phone</h4>
+                            <p>081839029381</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Email Address</h4>
+                            <p>rara@gmail.com</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Address</h4>
+                            <p>Jl. Kembang Jakarta</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Job Title</h4>
+                            <p>Sales Manager</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Company</h4>
+                            <p>PT Tes Indonesia</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Website</h4>
+                            <p>-</p>
+                        </div>
+                        <div class="profile-contact__list">
+                            <h4>Source</h4>
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-document-box">
+                    <div class="profile-document-box__header">
+                        <h3>Document</h3>
+                        <button class="button-secondary">New</button>
+                    </div>
+                    <div class="profile-document-box__body">
+                        <div class="profile-document__list">
+                            <h4>Grafik</h4>
+                            <p>21/09/2023</p>
+                            <p>PDF</p>
+                        </div>
+                        <div class="profile-document__list">
+                            <h4>Data</h4>
+                            <p>21/09/2023</p>
+                            <p>Excel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activity">
+                <div class="activity-box">
+                    <div class="activity-box_tabs">
+                        <button data-tab="activity1" class="tab-button active">Activity</button>
+                        <button data-tab="chat2" class="tab-button">Chat</button>
+                        <button data-tab="summary3" class="tab-button">Summary</button>
+                    </div>
+                    <div class="activity-box_content tab-content" id="activity1">
+                        <form class="form-activity">
+                            <div class="form-input">
+                                <label>Type Activity</label>
+                                <input type="text" placeholder="Chat">
+                            </div>
+                            <div class="form-input">
+                                <label>Subjects</label>
+                                <input type="text" placeholder="Subjects..">
+                            </div>
+                            <div class="form-input">
+                                <label>Start Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>End Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Description</label>
+                                <textarea placeholder="Chat"></textarea>
+                            </div>
+                            <div class="form-input">
+                                <label>Status</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>Priority</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Documents</label>
+                                <div class="drag-file_container" id="file-upload">
+                                    <input type="file"/>
+                                    <span>Drag your document or upload manually</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row jc-end w-100">
+                                <button class="button-secondary mr-1">Cancel</button>
+                                <button class="button-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="chat-box_content tab-content" id="chat2">
+                        <form class="form-activity">
+                            <div class="form-input">
+                                <label>Type Chat</label>
+                                <input type="text" placeholder="Chat">
+                            </div>
+                            <div class="form-input">
+                                <label>Subjects</label>
+                                <input type="text" placeholder="Subjects..">
+                            </div>
+                            <div class="form-input">
+                                <label>Start Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>End Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Description</label>
+                                <textarea placeholder="Chat"></textarea>
+                            </div>
+                            <div class="form-input">
+                                <label>Status</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>Priority</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Documents</label>
+                                <div class="drag-file_container" id="file-upload">
+                                    <input type="file"/>
+                                    <span>Drag your document or upload manually</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row jc-end w-100">
+                                <button class="button-secondary mr-1">Cancel</button>
+                                <button class="button-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="summary-box_content tab-content" id="summary3">
+                        <form class="form-activity">
+                            <div class="form-input">
+                                <label>Type Summary</label>
+                                <input type="text" placeholder="Chat">
+                            </div>
+                            <div class="form-input">
+                                <label>Subjects</label>
+                                <input type="text" placeholder="Subjects..">
+                            </div>
+                            <div class="form-input">
+                                <label>Start Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>End Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Description</label>
+                                <textarea placeholder="Chat"></textarea>
+                            </div>
+                            <div class="form-input">
+                                <label>Status</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-input">
+                                <label>Priority</label>
+                                <input type="date">
+                            </div>
+                            <div class="textarea">
+                                <label>Documents</label>
+                                <div class="drag-file_container" id="file-upload">
+                                    <input type="file"/>
+                                    <span>Drag your document or upload manually</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row jc-end w-100">
+                                <button class="button-secondary mr-1">Cancel</button>
+                                <button class="button-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-box__header">
+                        <h3>Timeline</h3>
+                        <button class="button-secondary">All Activity</button>
+                    </div>
+                    <div class="timeline-box__body">
+                        <img src="assets/ph_battery-vertical-empty-light.png"/>
+                        <p>No History Activity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="styles/js/script.js"></script>
+
+</html>
